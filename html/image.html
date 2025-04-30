@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Images</title>
+</head>
+<body>
+    <!-- take source form any where form the web -->
+    <img src="../images/sachipic.jpg" alt="imgofME">
+    <!-- alt is just replacement of that image if error occured at loading time -->
+     <picture>
+        <source media="(min-width: 650px)" srcset="../images/sachipic.jpg"/>
+        <source media="(min-width: 450px)" srcset="../images/sachipic.jpg"/>
+        <img src="../images/sachipic.jpg" height="500px" width="500px" alt="">
+     </picture>
+     <!-- we can also generate map for any image so that on clicking on an specific area we can do many things -->
+      <table style="border-collapse: collapse;">
+        <tr>
+            <td style="border: 1px solid#000; padding: 10px;">Chai aur code</td>
+            <td style="border: 1px solid#000; padding: 10px;">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/I7LrS1z_WNA?si=uHymhm_izTE1OEIu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </td>
+        </tr>
+      </table>
+</body>
+</html>
